@@ -1,0 +1,39 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "name": "Headphones",
+      "price": 250
+    },
+    {
+      "id": "2",
+      "name": "iPhone 14",
+      "price": 2500
+    },
+    {
+      "id": "3",
+      "name": "Play 5",
+      "price": 3500
+    },
+    {
+      "id": "4",
+      "name": "Xbox Series X",
+      "price": 2500000
+    },
+    {
+      "id": "5",
+      "name": "Laptop Gamer",
+      "price": 6500000
+    },
+    {
+      "id": "7",
+      "name": "Motorola E22",
+      "price": 250000
+    },
+    {
+      "id": "8",
+      "name": "iPhone XR",
+      "price": 1200000
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management - CRUD</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Application Header -->
+        <header>
+            <h1>Product Management System</h1>
+            <p>CRUD Operations with JSON Server</p>
+        </header>
+
+        <main>
+            <!-- Form Section for Add/Edit Products -->
+            <section class="form-section">
+                <h2>Add/Edit Product</h2>
+                <form id="productForm">
+                    <!-- Product Name Input -->
+                    <div class="form-group">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" id="productName" name="name" required>
+                    </div>
+                    
+                    <!-- Product Price Input -->
+                    <div class="form-group">
+                        <label for="productPrice">Price ($):</label>
+                        <input type="number" id="productPrice" name="price" step="0.01" min="0" required>
+                    </div>
+                    
+                    <!-- Form Action Buttons -->
+                    <div class="form-buttons">
+                        <button type="submit" id="submitBtn">Add Product</button>
+                        <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Products List Section -->
+            <section class="products-section">
+                <h2>Products List</h2>
+                
+                <!-- Control Panel -->
+                <div class="controls">
+                    <button id="refreshBtn">Refresh List</button>
+                    <span id="productCount">Total: 0 products</span>
+                </div>
+                
+                <!-- Loading Indicator -->
+                <div id="loading" class="loading" style="display: none;">
+                    Loading products...
+                </div>
+                
+                <!-- Error Message Container -->
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+                
+                <!-- Products Grid Container -->
+                <div id="productsList" class="products-grid">
+                    <!-- Products will be loaded here dynamically -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="src/java_script/script.js"></script>
+</body>
+</html>
